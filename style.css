@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+nav{
+    margin: auto;
+}
+a{
+    color: hsl(31, 77%, 52%);
+    font-size: 30px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.full{
+    width: 80em;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+.content{
+    padding: 2em;
+    width: 20.6%;
+}
+.content h2{
+    font-family: 'Big Shoulders Display', cursive;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: hsl(0, 0%, 95%);
+}
+.content p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 70px;
+}
+
+button:hover{
+    cursor: pointer;
+    border: solid 1px hsl(0, 0%, 95%);
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width:375px) {
+    .full{
+        width: 70%;
+    }
+    .content{
+        width: 100%;
+        flex-wrap: nowrap;
+    } 
+    .button{
+        margin-bottom: 5px;
+    }   
+}
